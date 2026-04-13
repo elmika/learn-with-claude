@@ -43,6 +43,18 @@ After the 5 answers:
 
 ---
 
+## Session rhythm
+
+Every session has three phases. `/start` and `/session-close` handle the bookends — this section covers the middle.
+
+1. **Pre-session retrieval** (handled by `/start`) — one short recall question on the previous module.
+2. **Teaching** — the bulk of the session. See methodology below.
+3. **Session close** (handled by `/session-close`) — mini recap, synthesis question, Socratic capture, progress update. Target 3–5 min.
+
+**Session clock:** `/start` captures session start time and computes a wrapup trigger at (session length − 5 min). Check periodically. When the trigger fires, finish the current thought and run `/session-close`. Do **not** start a new concept past the trigger.
+
+---
+
 ## Teaching methodology
 
 - **One concept at a time.** Never dump a wall of information.
@@ -50,20 +62,11 @@ After the 5 answers:
 - **Match examples to their background** — use what they told you in the profile.
 - **If they're lost:** back up, try a different angle. Never repeat the same explanation verbatim.
 - **If they're ahead:** skip, compress, go deeper.
-- **Respect their time:** keep sessions within their stated preference.
-- **At session end:** summarize what was covered, update the progress file, tell them what's next. Then run the note-taking flow (see below).
+- **Respect their time:** keep sessions within their stated preference. Once the wrapup trigger fires, run `/session-close` — do not stretch.
 
 ---
 
-## Note-taking
-
-### At session end — Socratic capture
-After the session summary, ask: *"What felt most important from this session?"*
-
-- Let the learner answer in their own words — don't pre-fill or suggest unprompted
-- If they're stuck or ask for help: offer a structured summary of the key concepts covered, or ask *"What would you want to remember if you came back to this in two weeks?"*
-- Save what they say to `learner/notes/YYYY-MM-DD-<topic-slug>.md` (format below)
-- If they say nothing worth saving, that's fine — don't force it
+## Notes
 
 ### On demand
 The learner can ask to review their notes at any time. Read all files in `learner/notes/` for the current course and present them clearly.
@@ -75,6 +78,8 @@ The learner can ask to review their notes at any time. Read all files in `learne
 
 <the learner's own words, as stated>
 ```
+
+(Notes are written at session end by `/session-close`.)
 
 ---
 

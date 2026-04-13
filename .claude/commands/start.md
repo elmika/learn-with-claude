@@ -43,9 +43,32 @@ Keep it tight. No extra commentary after the map — the greeting already invite
 
 Then stop and wait for the learner to respond.
 
-## Step 3 — Continue as normal
+## Step 3 — Start the session clock
 
-Follow the teaching methodology in CLAUDE.md from there.
+Run `date +%s` via Bash to capture the session start time (Unix seconds). Remember it silently.
+
+Compute the **wrapup trigger time** = start + (session length in seconds − 5 min). For a 20-min session, that's start + 15 min.
+
+You will check the clock periodically during the session. When `now >= wrapup trigger`, finish the current thought and run `/session-close` — do not start a new concept.
+
+Do not show the clock or the math to the learner.
+
+## Step 4 — Pre-session retrieval (≤1 min, only if a prior session exists)
+
+Before introducing any new material, ask **one short retrieval question** tied to the most recent module. Purpose: activate prior knowledge and surface gaps before teaching.
+
+- One question only. Conversational, not a quiz.
+- If they nail it: one-line ack, move on.
+- If shaky: 20–30 sec refresh, then move on. Do not grade. Do not belabor.
+- If this is the very first session on a course (no prior progress), skip this step entirely.
+
+Examples:
+- "Before we jump into pricing — quick one: what does it mean for a business to break even?"
+- "Before we move on: if fixed costs go up, what happens to the break-even point?"
+
+## Step 5 — Continue as normal
+
+Follow the teaching methodology in CLAUDE.md from there. Keep an eye on the clock.
 
 ---
 
