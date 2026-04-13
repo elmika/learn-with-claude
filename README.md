@@ -23,6 +23,14 @@ That's it. No setup. No installs. No configuration.
 
 On your first session, Claude asks you five short questions, builds a course outline tailored to you, and starts teaching. Next time, `/start` picks up right where you stopped.
 
+> **First-time trust prompt.** The first time you open this folder, Claude Code will ask whether you trust it — that's its standard prompt for any new directory, not something specific to this project. Before you say yes, check the repo yourself. You can verify the following in seconds:
+>
+> - `find . -type f` — every file in this repo is either plain markdown, the LICENSE, or empty `.gitkeep` placeholders. No scripts. No binaries. No post-install hooks.
+> - The agent's behavior is defined entirely in four markdown files you can read: `CLAUDE.md` and the three commands under `.claude/commands/` (`start.md`, `session-close.md`, `review.md`).
+> - Everything else (`courses/`, `learner/`) is content — course outlines and the profile/progress/notes you build up as you use it.
+>
+> Nothing here executes on your machine. Claude Code does the execution, and you're already the one deciding to run it.
+
 ---
 
 ## What a session looks like
