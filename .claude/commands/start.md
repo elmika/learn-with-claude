@@ -58,13 +58,13 @@ Follow the teaching methodology in CLAUDE.md from there.
 > Today we're heading into pricing — how much to charge, and why. Want to start there, or would you rather revisit anything from break-even first?
 >
 > **Business Fundamentals**
-> &nbsp;&nbsp;✓ 1. What is a business?
-> &nbsp;&nbsp;✓ 2. Revenue, costs, and profit
-> &nbsp;&nbsp;✓ 3. Fixed vs variable costs
-> &nbsp;&nbsp;✓ 4. Break-even analysis
-> &nbsp;&nbsp;→ 5. Pricing strategies
-> &nbsp;&nbsp;&nbsp;&nbsp;6. Cash flow basics
-> &nbsp;&nbsp;&nbsp;&nbsp;7. Reading a simple P&L
+>   ✓ 1. What is a business?
+>   ✓ 2. Revenue, costs, and profit
+>   ✓ 3. Fixed vs variable costs
+>   ✓ 4. Break-even analysis
+>   → 5. Pricing strategies
+>     6. Cash flow basics
+>     7. Reading a simple P&L
 
 Notice what the greeting does: it references a specific quote ("wanting to know whether a business is actually going to work"), it references a specific moment Sofia figured out on her own ("selling 10 shirts a day wasn't much of a return"), and it connects last session to this one through an idea, not a module number. The map then anchors her visually in the course.
 

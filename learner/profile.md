@@ -2,7 +2,7 @@
 
 **Name:** Sofia
 **Learning style:** examples first
-**Session length:** 30 min
+**Session length:** 20 min
 
 ## Background
 

@@ -2,7 +2,7 @@
 
 **Target learner:** Secondary school student (ages 15–18) taking a business studies course. Little or no real-world business experience, but curious and able to handle simple math.
 **Goal:** Understand how a business actually works financially — from what it sells to whether it makes money.
-**Suggested session length:** 30 min
+**Suggested session length:** 20 min
 
 ---
 
